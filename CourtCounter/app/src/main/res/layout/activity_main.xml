@@ -54,6 +54,8 @@
             android:layout_gravity="center_horizontal"
             android:background="#F57C00"
             android:text="+2 POINTS"
+            android:onClick="PlusTwoPoints"
+
             />
         <Button
             android:layout_marginTop="50dp"
@@ -62,6 +64,8 @@
             android:layout_gravity="center_horizontal"
             android:background="#F57C00"
             android:text="FREE THROW"
+            android:onClick="FreeThrow"
+
             />
     </LinearLayout>
     <View
@@ -89,6 +93,7 @@
 
         </TextView>
         <TextView
+            android:id="@+id/teamB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="0"
@@ -103,6 +108,8 @@
             android:layout_gravity="center_horizontal"
             android:background="#F57C00"
             android:text="+3 POINTS"
+            android:onClick="PlusThreePointsB"
+
             />
         <Button
             android:layout_marginTop="50dp"
@@ -111,6 +118,8 @@
             android:layout_gravity="center_horizontal"
             android:background="#F57C00"
             android:text="+2 POINTS"
+            android:onClick="PlusTwoPointsB"
+
             />
         <Button
             android:layout_marginTop="50dp"
@@ -119,6 +128,8 @@
             android:layout_gravity="center_horizontal"
             android:background="#F57C00"
             android:text="FREE THROW"
+            android:onClick="FreeThrowB"
+
             />
 
     </LinearLayout>
@@ -130,5 +141,7 @@
         android:background="#f57c00"
         android:text="RESET"
         android:layout_alignParentBottom="true"
+        android:onClick="reset"
+
         />
 </RelativeLayout>

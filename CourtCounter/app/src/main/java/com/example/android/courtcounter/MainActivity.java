@@ -13,10 +13,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     int num;
-        public void PlusThreePoints(View view) {
+    public void PlusThreePoints(View view) {
         num+=3;
         display(num);
-        }
+    }
     public void PlusTwoPoints(View view) {
         num+=2;
         display(num);
@@ -27,6 +27,33 @@ public class MainActivity extends AppCompatActivity {
     }
     private void display(int num){
         TextView textView = (TextView) findViewById(R.id.teamA);
-        textView.setText(num);
+        textView.setText(""+num);
+    }
+    int numB;
+    public void PlusThreePointsB(View view) {
+        numB+=3;
+        displayB(numB);
+    }
+    public void PlusTwoPointsB(View view) {
+        numB+=2;
+        displayB(numB);
+    }
+    public void FreeThrowB(View view) {
+        numB++;
+        displayB(numB);
+    }
+    private void displayB(int numB){
+        TextView textView = (TextView) findViewById(R.id.teamB);
+        textView.setText(""+numB);
+    }
+    public void reset(View view){
+        TextView textViewB = (TextView) findViewById(R.id.teamB);
+        TextView textViewA = (TextView) findViewById(R.id.teamA);
+        num=0;
+        numB=0;
+        textViewA.setText("00");
+        textViewB.setText("00");
+
+
     }
 }
